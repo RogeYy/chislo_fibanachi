@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int N, first_namber, doble_namber, zap_a;
+	first_namber = 0;
+	doble_namber = 1;
+	cin >> N;
+
+	for (int i = 0; i < N - 1; i++)
+	{
+
+		zap_a = first_namber;
+		first_namber = doble_namber;
+		doble_namber += zap_a;
+
+	}
+	if (N == 0) {
+
+		doble_namber = 0;
+
+	}
+		
+	cout << doble_namber;
+
+}
